@@ -47,8 +47,10 @@ The following animation demonstrates the application functionality:
 5. Click the + icon (top right) to add another note.
 6. Additional: Click the trash icon to delete saved notes.
 
-## Deployed Application Link:
-[Deployed Application Link:]()
+
+## Deployed Application Links and demo link:
+http://localhost:3001
+https://www.loom.com/share/4bc4343f7e3f4702a540407d8b8270f4?sid=ab6cd3f9-870b-4920-b2c0-ec382d5ed3df
 
 ## Screenshots:
 ### Figure 1. Screenshot
