@@ -20,8 +20,3 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Links
 
-Link to Github:
-https://github.com/danielolvera21/note-taker
-
-Link to working app in browser:
-https://murmuring-shelf-65019.herokuapp.com/
