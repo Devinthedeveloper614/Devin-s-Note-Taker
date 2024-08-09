@@ -1,19 +1,18 @@
 const express = require('express');
-const barrel = require('./routes/index.js');
+const path = require('path');
 const PORT = process.env.PORT || 3001;
- // dynamically set the port
 const app = express();
 
-// Express middleware will always run the operation in the order from top to bottom "order matters"
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
+
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(express.static("public"));
-
-app.use("", barrel);
-
-
+app.use(apiRoutes);
+app.use(htmlRoutes);
 
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    console.log(`API server now on port ${PORT}!`);
 });
